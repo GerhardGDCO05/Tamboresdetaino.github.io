@@ -1,0 +1,232 @@
+html, body {
+    width: 100%;
+    background:url(https://img1.picmix.com/output/stamp/normal/0/4/2/8/1538240_9239f.gif) center / cover fixed no-repeat  #001f;
+    color: #fb5f;
+    font-family: Montserrat,poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+/*-----------------------------------------------------------------*/
+/*bienvenida*/
+
+dialog{
+    background-color: #dddc;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    
+    
+}
+.welcome{
+    background-color:#000;
+    color: #fb5f;
+    border-radius:5% ;
+    width: 30%;
+    top: 0;
+    margin: auto;
+    opacity: 0;
+    position: relative;
+    padding: 10px 20px;
+    transition: background-color, color, top, 2s;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.welcome h2{
+    margin-top: 10px;
+    text-align: center;
+}
+.welcome p{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+.close_welcome{
+    background-color:#000;
+    color: #fb5f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 12px;
+    border: 3px solid #fb5f;
+    transition: font_size ,0.2s; ;
+    font-size: 1.5em;
+}
+.logo_welcome{
+    width: 20%;
+    height: 20%;
+}
+
+.close_welcome:hover{
+    font-size: 1.8em;
+}
+
+/*-----------------------------------------------------------------*/
+.encabezado{
+    background:transparent;
+    margin: auto;
+    margin-top: 0.5em;
+    width: 80%;
+    height: 8em;
+    text-shadow: 0 0 15px #ff50;
+    text-align: center;
+}
+/*-----------------------------------------------------------------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 0;
+}
+/*--------------------------*/
+.foto{
+    width: 45%;
+    height: 90%;
+    
+}
+.frank{
+    margin: 0 0 0 2em;
+    width: 90%;
+    height: 20em;
+    box-shadow: 0 0 8px #fb5f;
+    border-radius: 50%; 
+}
+
+/*--------------------------*/
+.video{
+    width: 45%;
+    height: 20em;
+}
+
+.video_presentacion {
+    border-radius: 5%;
+    width: 90%;
+    height: 20em;
+    box-shadow: 0 0 8px 0 #fb5f;
+}
+
+/*-----------------------------------------------------------------*/
+.menu{
+    width: 100vw;
+    text-align: center;
+}
+
+.info{
+    margin: auto;
+    margin-top: 7em;
+    width: 60%;
+    padding: 40px 0;
+}
+
+li{
+    margin: 0 0 5vh 0;
+    font-size: 2em;
+    transition: 0.1s;
+    list-style-type: none;   
+}
+li:hover{
+    color:white;
+    font-size: 2.3em;
+    
+}
+li:hover a{
+    border-left: 3px solid #fff;
+    padding: 5px;
+}
+a{
+    color: #fb5f;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ccce;
+    font-weight: bold;
+    width: 80%;
+    height: 80%;
+    transition: color 0.1s, 0.1s;
+}
+a:hover{
+    color: #fff;
+    opacity: 0.7;
+}
+/*-----------------------------------------------------------------*/
+.youtube,.facebook, .instagram,.tiktok,.email{
+    padding: 2px;
+}
+img:hover{
+    background: white;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.social-links{
+    display: flex;
+    margin: 5vw 0 0 6vw;
+    justify-content: space-around;
+}
+
+.facebook, .instagram,.tiktok{
+    max-width: 7vw;
+    min-width: 7vw;
+}
+.youtube{
+    margin-top: 0.5em;
+    max-width: 9vw;
+    min-width: 9vw;
+}
+
+.facebook, .instagram,.tiktok{
+    border-radius: 50%;
+}
+.youtube{
+    border-radius:29%
+}
+.email{
+    max-width: 10vw;
+    min-width: 10vw;
+    margin-top: 0.2em;
+    border-radius: 20%;
+}
+.social_text{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    border-bottom: 0.5px solid #fb5f;
+    box-shadow: 0 4px 5px #fb5f;
+}
+/*-----------------------------------------------------------------*/
+
+h1,h2,p{
+    margin: 0.2em;
+}
+h1{
+    font-size: 2em; 
+}
+h1::first-letter{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+span:hover{
+    color: white;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+span{
+    border-bottom: 2px solid #aaa;
+}
+/*-----------------------------------------------------------------*/
