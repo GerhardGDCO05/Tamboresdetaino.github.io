@@ -11,16 +11,14 @@ html, body {
 
 .contenedor{
     color: #000;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height:100vh;
     display: flex;
     position: relative;
-    border-bottom: 2px solid #fff;
-
 }
 .menu{
     width: 20vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-around; /* Distribuir los elementos verticalmente */
     border-right: 2px solid #fff;
@@ -58,7 +56,6 @@ html, body {
     }
 .links:hover{
     color: #d7e9f1;
-    
 }
 
 @media (max-width: 768px) {
@@ -129,16 +126,21 @@ html, body {
 }
 
 .final {
-    background: #000;
-    display: flex; 
-    justify-content: space-around; 
+    background: #000; 
     align-items: center; 
     font-weight: bold;
     color: #fff;
-    padding: 2vh;
-    flex-direction: column; 
-    align-items: center; 
+    border-top: 2px solid #fff;
+    padding: 0;
 }
+@media (max-width: 768px) {
+    .final {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Centra los elementos horizontalmente */
+      text-align: center; /* Centra el texto */
+    }
+}
+
 @media (max-width: 480px) {
     .final {
       flex-direction: column; /* Apila los elementos verticalmente */
@@ -148,8 +150,8 @@ html, body {
 }
 
 .logo {
-    width: 50vw;
-    height: 50%;
+    width: 25%;
+    margin: auto;
     max-width: 100%;
     opacity: 0.8; 
 }
