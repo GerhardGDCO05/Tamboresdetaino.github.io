@@ -146,16 +146,14 @@ html, body {
       text-align: center; /* Centra el texto */
     }
 }
-.final p {
-    font-size: 3vh; 
-    margin: 1vh;
-}
+
 .logo {
-    border-top: 2px solid #fff;
-    width: 30vw;
-    max-width: 100%; 
+    width: 50vw;
+    height: 50%;
+    max-width: 100%;
+    opacity: 0.8; 
 }
-img{
+.log_fundacion{
     width: 100%;
 }
 .final img:hover{
@@ -167,12 +165,13 @@ img{
     
 }
 .info_final {
-    width: 80vw;
+    width: 100vw;
+    height: 50%;
     text-align: center;
     justify-content: center;
     display: flex;
     border-top: 2px solid #fb54;
-    padding: 2vh; 
+    padding: 0; 
 }
 
 @media (max-width: 768px) {
@@ -184,14 +183,15 @@ img{
 
 @media (max-width: 480px) {
     .final p {
-      font-size: 4vw; /* Ajusta aún más para pantallas muy pequeñas */
+      font-size: 3vw; /* Ajusta aún más para pantallas muy pequeñas */
+      margin: 1vw; 
     }
 }
 
 @media (max-width: 768px) {
     .contac, .correo, .redes {
       width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-      margin-bottom: 2vh; /* Agrega un poco de espacio entre los elementos */
+      margin-bottom: 1vh; /* Agrega un poco de espacio entre los elementos */
     }
 }
 
@@ -204,17 +204,22 @@ h1{
 .contac, .correo, .redes {
     content: center;
     flex-grow: 1; 
-    margin: auto;
     width: 30%; 
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
     margin-bottom: 2vh; /* Espacio entre los elementos */
     align-items: center;
-}
-.redes {
     margin-top: 3vh;
-    text-align: center; /* Centra los íconos de redes sociales */
+    font-size: 1.5vh;
+}
+.contac h2,.correo h2{
+    font-size: 2.2vh;
+}
+.redes h2{
+    color: white;
+    margin: 0;
+    font-size: 2vh;
 }
 
 .redes p {
@@ -245,9 +250,7 @@ h3{
     font-size: 4vh;
     color:rgb(215, 230, 10) 
 }
-.logo{
-    opacity: 0.8;
-}
+
 p{
     color: #fb5f;
 }
