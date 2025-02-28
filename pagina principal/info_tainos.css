@@ -1,0 +1,190 @@
+html, body {
+    
+    color: #fb5f;
+    font-family: Montserrat,arial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedor{
+    color: #000;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    position: relative;
+
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; /* Distribuir los elementos verticalmente */
+    border-right: 2px solid #fb54;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: #000;
+}
+.contenido{
+    width: 80%;
+    height: 100%;
+    overflow-y: auto; 
+    background:url(https://i.pinimg.com/736x/48/78/cc/4878cca21b9483154164809816e29eff.jpg) center/cover no-repeat;
+}
+.contenido div h2{
+    margin:50px ;
+    font-size: 2.5em;
+    color:rgb(230, 135, 10)  
+}
+
+.contenido div p{
+    font-size: 1.3em;
+    color: #eeef;
+    padding: auto;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: justify;
+}
+
+.img_desorden,.el_diario{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desorden,.diar{
+    width: 100%;
+    margin: auto;
+    border-radius: 30%;
+}
+
+.entrevista_el_diario{
+    text-decoration: none;
+    color: #04c7f8;
+    transition: color 0.6s;
+}
+.entrevista_el_diario:hover{
+    color: #f51
+}
+
+.lista_menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Permitir que los elementos tomen todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribuir los elementos verticalmente */
+}
+
+.element{
+    text-align: center;
+    border-bottom: 2px solid #d7e9f1;
+}
+.hf{
+    border: none;
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    color: #eb5f;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.4s;
+    padding-bottom: 50px;
+}
+.links:hover{
+    color: #d7e9f1;
+    
+}
+
+.final{
+    background: #000;
+    display: flex;
+    font-weight: bold;
+}
+.final p{
+    font-size: 0.8em;
+}
+.logo{
+    border-top:2px solid #fff ;
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+.final img:hover{
+    background: white;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+    
+}
+.info_final{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-top: 2px solid #fb54;
+}
+h1{
+    text-align: center;
+    font-size: 3.5vw;
+    color: #fb5f;
+    text-decoration: underline;
+}
+.contac,.correo,.redes{
+    content: center;
+    flex-grow: 1;
+    margin: auto;
+    width: 27.33%;
+    word-wrap: break-word; /* Permitir saltos de línea dentro de palabras largas */
+}
+
+.redes{
+    margin-top: 3em;
+}
+.redes p{
+    margin: 0;
+}
+
+.redes a{
+    display: inline-block;
+    width: 10%;
+    margin: 1em;
+}
+.youtube,.fb,.instagram,.tiktok{
+    border-radius: 50%;
+    width: 100%;
+    border: 2px solid transparent;
+}
+.img_redes:hover{
+    background: #fff;
+}
+h2{
+    margin-top: 0;
+    font-size: 2.vw;
+}
+h3{
+    margin:1em ;
+    font-size: 1.8em;
+    color:rgb(215, 230, 10) 
+}
+.logo{
+    opacity: 0.8;
+}
+p{
+    color: #fb5f;
+}
+strong{
+    font-weight: bold;
+    color: #04c7f8;
+    font-size: 1.2em;
+}
+span{
+    font-weight: bold;
+    color: #0aa8ec;
+}
