@@ -15,6 +15,7 @@ html, body {
     height: inherit;
     display: flex;
     position: relative;
+    border-bottom: 2px solid #fff;
 
 }
 .menu{
@@ -22,36 +23,78 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: space-around; /* Distribuir los elementos verticalmente */
-    border-right: 2px solid #fb54;
+    border-right: 2px solid #fff;
     flex-direction: column;
     overflow-x: hidden;
     background: #000;
+    overflow-y:hidden;
+    
 }
-.contenido{
+.lista_menu{
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; /* Permitir que los elementos tomen todo el espacio disponible */
+    flex-direction: column;
+    justify-content: space-around; /* Distribuir los elementos verticalmente */;
+}
+
+.element {
+    text-align: center;
+    height: 25vh;
+    margin: 0;
+    border-bottom: 2px solid #d7e9f1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    }
+
+.links {
+    text-decoration: none;
+    color: #eb5f;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: color 0.4s;
+    margin: 0; 
+    }
+.links:hover{
+    color: #d7e9f1;
+    
+}
+
+@media (max-width: 768px) {
+    .links {
+    font-size: 3vw;
+    }
+}
+
+.contenido {
     width: 80vw;
     height: 100vh;
-    overflow-y: auto; 
-    background:url(https://i.pinimg.com/736x/48/78/cc/4878cca21b9483154164809816e29eff.jpg) center/cover no-repeat;
+    overflow-y: auto;
+    background: url(https://i.pinimg.com/736x/48/78/cc/4878cca21b9483154164809816e29eff.jpg) center/cover no-repeat;
+    max-width: 100%; 
 }
+
 .contenido div h2{
-    margin:50px ;
-    font-size: 5vh;
+    margin:2vh ;
+    font-size: 3vh;
     color:rgb(230, 135, 10)  
 }
 
-.contenido div p{
-    font-size: 3vh;
-    color: #eeef;
-    padding: auto;
+.contenido div p {
+    font-size: 2.3vh; 
+    color: #eeef; 
+    padding: 2vw; 
     margin-left: 2vw;
     margin-right: 2vw;
     text-align: justify;
 }
 
-.img_desorden,.el_diario{
+.img_desorden, .el_diario {
     width: 65vw;
     margin-left: 3vh;
     margin-right: 3vh;
+    max-width: 100%; 
 }
 .desorden,.diar{
     width: 100%;
@@ -68,49 +111,42 @@ html, body {
     color: #f51
 }
 
-.lista_menu{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-grow: 1; /* Permitir que los elementos tomen todo el espacio disponible */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Distribuir los elementos verticalmente */
-}
-
-.element{
-    text-align: center;
-    border-bottom: 2px solid #d7e9f1;
-}
 .hf{
     border: none;
 }
 
-.links{
-    display: block;
-    text-decoration: none;
-    color: #eb5f;
-    font-weight: bold;
-    font-size: 1.5em;
-    transition: color 0.4s;
-    padding-bottom: 50px;
-}
-.links:hover{
-    color: #d7e9f1;
-    
+@media (max-width: 768px) {
+    .contenido div p {
+      font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      padding: 1vw; /* Reduce el espaciado en pantallas más pequeñas */
+    }
 }
 
-.final{
+@media (max-width: 480px) {
+    .contenido div p {
+      font-size: 5vw; /* Ajusta aún más para pantallas muy pequeñas */
+    }
+}
+
+.final {
     background: #000;
-    display: flex;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
     font-weight: bold;
+    color: #fff;
+    padding: 2vh;
+    flex-direction: column; 
+    align-items: center; 
 }
-.final p{
-    font-size: 2vh;
+.final p {
+    font-size: 2vh; 
+    margin: 1vh;
 }
-.logo{
-    border-top:2px solid #fff ;
+.logo {
+    border-top: 2px solid #fff;
     width: 20vw;
+    max-width: 100%; 
 }
 img{
     width: 100%;
@@ -123,45 +159,75 @@ img{
     opacity: 0.8;
     
 }
-.info_final{
+.info_final {
     width: 80vw;
     text-align: center;
     justify-content: center;
     display: flex;
     border-top: 2px solid #fb54;
+    padding: 2vh; 
 }
+
+@media (max-width: 768px) {
+    .final p {
+      font-size: 3vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      margin: 1vw; /* Reduce el espaciado en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .final p {
+      font-size: 4vw; /* Ajusta aún más para pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .contac, .correo, .redes {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      margin-bottom: 2vh; /* Agrega un poco de espacio entre los elementos */
+    }
+}
+
 h1{
     text-align: center;
     font-size: 5vw;
     color: #fb5f;
     text-decoration: underline;
 }
-.contac,.correo,.redes{
+.contac, .correo, .redes {
     content: center;
-    flex-grow: 1;
+    flex-grow: 1; 
     margin: auto;
-    width: 27.33vw;
-    word-wrap: break-word; /* Permitir saltos de línea dentro de palabras largas */
+    width: 30%; 
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
 }
-
-.redes{
+.redes {
     margin-top: 3vh;
 }
-.redes p{
+.redes {
+    margin-top: 3vh;
+    text-align: center; /* Centra los íconos de redes sociales */
+}
+
+.redes p {
     margin: 0;
 }
 
-.redes a{
+.redes a {
     display: inline-block;
     width: 3vw;
     margin: 1vh;
+    max-width: 100%;
 }
-.youtube,.fb,.instagram,.tiktok{
+.youtube, .fb, .instagram, .tiktok {
     border-radius: 50%;
     width: 100%;
     border: 2px solid transparent;
+    max-width: 100%; 
 }
-.img_redes:hover{
+.img_redes:hover {
     background: #fff;
 }
 h2{
