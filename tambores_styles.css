@@ -85,8 +85,8 @@ dialog{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
     margin-left: 0;
 }
 /*--------------------------*/
