@@ -139,13 +139,20 @@ html, body {
     flex-direction: column; 
     align-items: center; 
 }
+@media (max-width: 480px) {
+    .final {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Centra los elementos horizontalmente */
+      text-align: center; /* Centra el texto */
+    }
+}
 .final p {
-    font-size: 2vh; 
+    font-size: 3vh; 
     margin: 1vh;
 }
 .logo {
     border-top: 2px solid #fff;
-    width: 20vw;
+    width: 30vw;
     max-width: 100%; 
 }
 img{
@@ -202,9 +209,8 @@ h1{
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
-}
-.redes {
-    margin-top: 3vh;
+    margin-bottom: 2vh; /* Espacio entre los elementos */
+    align-items: center;
 }
 .redes {
     margin-top: 3vh;
@@ -217,7 +223,7 @@ h1{
 
 .redes a {
     display: inline-block;
-    width: 3vw;
+    width: 5vw;
     margin: 1vh;
     max-width: 100%;
 }
