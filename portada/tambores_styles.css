@@ -58,7 +58,7 @@ dialog{
     right: 0;
     padding: 2px 12px;
     border: 3px solid #fb5f;
-    transition: font_size ,0.5s; ;
+    transition: font_size ,0.2s; ;
     font-size: 1.5em;
 }
 .logo_welcome{
@@ -132,7 +132,7 @@ dialog{
 li{
     margin: 0 0 5vh 0;
     font-size: 2em;
-    transition: 0.5s;
+    transition: 0.1s;
     list-style-type: none;   
 }
 li:hover{
@@ -152,7 +152,7 @@ a{
     font-weight: bold;
     width: 80%;
     height: 80%;
-    transition: color 0.5s, 0.5s;
+    transition: color 0.1s, 0.1s;
 }
 a:hover{
     color: #fff;
