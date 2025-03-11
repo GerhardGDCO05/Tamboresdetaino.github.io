@@ -111,52 +111,6 @@ html, body {
     border: none;
 }
 
-@media (max-width: 870px) {
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-    }
-    .menu{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: space-evenly; 
-    flex-flow: row nowrap;
-    overflow-x: hidden;
-    position: sticky;
-    border-bottom:1px solid #fff ;
-    overflow-y: hidden;
-    }
-    .lista_menu{
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-        
-    }
-    .element{
-        height: 100%;
-        border-right: 2px solid #fff;
-        flex-grow: 1;
-        
-    }
-    .element a{
-        font-size: 1.5vh;
-    }
-    .contenido{
-        max-width: 100%;
-        max-height: 100vh;
-        flex-grow: 1;
-        font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-        padding: 1vw; /* Reduce el espaciado en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .contenido div p {
-      font-size: 5vw; /* Ajusta aún más para pantallas muy pequeñas */
-    }
-}
-
 .final {
     background: #000; 
     align-items: center; 
@@ -284,6 +238,50 @@ span{
     font-weight: bold;
     color: #0aa8ec;
 }
+
+@media (max-width: 870px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+    width: 100vw;
+    height: 60rem;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-flow: row nowrap;
+    overflow-x: hidden;
+    position: sticky;
+    border-bottom:1px solid #fff ;
+    overflow-y: hidden;
+    flex-grow: 1;
+    }
+    .lista_menu{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        flex-grow: 1;
+        
+    }
+    .element{
+        height: 100%;
+        flex-grow: 1;
+        margin: 0 1vh;
+    }
+    .links{
+        font-size: 2vh;
+        text-shadow: 0px 0px 5px #aaa;
+    }
+    .contenido{
+        max-width: 100%;
+        max-height: 100vh;
+        flex-grow: 1;
+        font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        padding: 1vw; /* Reduce el espaciado en pantallas más pequeñas */
+    }
+}
+
+
 @media (max-width: 870px) {
     .final {
       flex-direction: column; /* Apila los elementos verticalmente */
