@@ -246,7 +246,7 @@ span{
     }
     .menu{
     width: 100vw;
-    height: 60rem;
+    height: 40rem;
     display: flex;
     justify-content: space-evenly; 
     flex-flow: row nowrap;
