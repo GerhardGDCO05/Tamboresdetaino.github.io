@@ -6,6 +6,8 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background: #000;
+    scrollbar-width: none;
 }
 
 .contenedor{
@@ -66,6 +68,7 @@ html, body {
     overflow-y: auto;
     background: url(https://i.pinimg.com/736x/48/78/cc/4878cca21b9483154164809816e29eff.jpg) center/cover no-repeat;
     flex-grow: 2;
+    scrollbar-width: none;
 }
 
 .contenido div h2{
@@ -246,15 +249,14 @@ span{
     }
     .menu{
     width: 100vw;
-    height: 40rem;
+    height: 14vh;
     display: flex;
     justify-content: space-evenly; 
     flex-flow: row nowrap;
-    overflow-x: hidden;
-    position: sticky;
-    border-bottom:1px solid #fff ;
-    overflow-y: hidden;
+    overflow: hidden;
+    position: fixed;
     flex-grow: 1;
+    z-index: 3;
     }
     .lista_menu{
         display: flex;
@@ -278,6 +280,8 @@ span{
         flex-grow: 1;
         font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
         padding: 1vw; /* Reduce el espaciado en pantallas más pequeñas */
+        z-index: 1;
+        margin-top: 14vh;
     }
 }
 
