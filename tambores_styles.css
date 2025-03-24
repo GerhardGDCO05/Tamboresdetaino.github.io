@@ -5,8 +5,6 @@ html, body {
     font-family: Montserrat,poppins, sans-serif;
     margin: 0;
     padding: 0;
-    
-    
 }
 /*-----------------------------------------------------------------*/
 /*bienvenida*/
@@ -33,6 +31,7 @@ dialog{
     animation: fadeIn 1s ease-out forwards;
     align-items: center;
     text-align: center;
+    z-index: 10;
 }
 
 @keyframes fadeIn {
@@ -58,8 +57,10 @@ dialog{
     padding: 2px 12px;
     border: 3px solid #fb5f;
     font-size: 1.5em;
-    transition: color,.2s;
+    transition: color .2s;
 }
+
+
 .logo_welcome{
     width: 30%;
     height: 30%;
@@ -91,8 +92,8 @@ dialog{
 }
 /*--------------------------*/
 .foto{
-    width: 45%;
-    height: 90%;
+    width: 50%;
+    height: 70%;
     
 }
 .frank{
@@ -101,6 +102,14 @@ dialog{
     height: 20em;
     box-shadow: 0 0 8px #fb5f;
     border-radius: 50%; 
+}
+
+@media (max-width: 870px) {
+    .foto{
+        width: 50%;
+        height: 50%;
+        margin-right: 7vw;
+    }
 }
 
 /*--------------------------*/
@@ -127,23 +136,24 @@ dialog{
     margin-top: 7em;
     width: 60%;
     padding: 40px 0;
+    z-index: 5;
+    
 }
 
-li{
+.list__info{
     margin: 0 0 5vh 0;
     font-size: 2em;
     transition: 0.1s;
-    list-style-type: none;   
+    list-style-type: none; 
 }
-li:hover{
-    color:white;
-    font-size: 2.3em;
-    
-}
-li:hover a{
+
+.list__info:hover a{
     border-left: 3px solid #fff;
-    padding: 5px;
 }
+.list__info:hover {
+    scale: 0.8;
+}
+
 a{
     color: #fb5f;
     text-decoration: none;
@@ -220,6 +230,9 @@ h1::first-letter{
 span:hover{
     color: white;
 }
+h2::first-letter{
+    font-weight: bold;
+}
 h2{
     font-size: 1.5em;
 }
@@ -230,3 +243,4 @@ span{
     border-bottom: 2px solid #aaa;
 }
 /*-----------------------------------------------------------------*/
+
